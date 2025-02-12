@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  background-color: #2c3e50;
+}
+/* Main Container */
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Keep the sidebar fixed */
+  left: 0; /* Ensure it's always on the left */
+  transition: none; /* Remove any transition effects */
+  margin-top: -8px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.nav-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.workout-dropdown {
+  position: relative;
+}
+
+.workout-dropdown a {
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+  display: block;
+  padding: 13px;
+  width: 10em;
+  /* Removed hover effect */
+}
+
+.workout-dropdown .dropdown {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  background-color: #34495e;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 350px;  /* Set the maximum height for the dropdown */
+  overflow-y: auto;    /* Enable vertical scrolling if content overflows */
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.workout-dropdown a:hover {
+  background-color: #34495e; /* Remove the background color change on hover */
+}
+
+/* Main Content Area */
+.main-content {
+  padding: 20px;
+  width: 70em;  /* Ensures the content takes up the remaining space */
+  margin-left: 250px;
+}
+
+/* Dashboard Title */
+.main-title h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Main Cards */
+.main-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  width: 45%;
+  height: 10em;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #34495e;
+}
+
+.card h1 {
+  font-size: 32px;
+  color: #2c3e50;
+}
+
+.card_icon {
+  color: #e74c3c;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+/* Charts Section */
+.charts {
+  margin-top: 40px;
+}
+
+/* Responsive Container for Chart */
+.responsive-container {
+  width: 100%;
+  height: 300px;
+}
+
+/* Hover Effect for Sidebar Links - Removed animation on hover */
+.nav-links li a:hover {
+  background-color: #34495e; /* Removed any hover transition */
+}
+
+/* Styling for Buttons (if any) */
+button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Miscellaneous */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* Input Section Styles */
+.input-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-section h3 {
+  font-size: 20px;
+  color: #34495e;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.input-section input {
+  width: 40%; /* Set input width to 80% for better spacing */
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #2262a3;
+  box-sizing: border-box;
+  text-align: center; /* Center text in the input field */
+  background-color: antiquewhite;
+}
+
+.input-section input:focus {
+  border-color: #e74c3c;
+  outline: none;
+}
+
+.input-section input::placeholder {
+  color: #bdc3c7; /* Light gray placeholder */
+  text-align: center; /* Center placeholder text */
+}
+
+.input-section button {
+  width: 10%;
+  padding: 12px;
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.input-section button:hover {
+  background-color: #c0392b;
+}

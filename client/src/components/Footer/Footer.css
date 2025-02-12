@@ -1,0 +1,138 @@
+.footer {
+  background-color: #0c163b;
+  padding: 60px 0;
+  color: #19968f;
+  font-size: 20px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  max-height: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 0 200px;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.footer-heading {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.footer-section .footer-text { /* More specific selector */
+  text-align: left;
+  margin: -4em;
+  margin-top: 1em;
+  color: aqua; /* Now this should work */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #498bc2;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #afc3eb;
+}
+
+.footer-divider {
+  border-top: 1px solid #f7f4f4;
+  margin: 30px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.social-icons-wrapper {
+  margin-bottom: 10px;
+}
+
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.social-icon:hover {
+  background-color: #29aafe;
+  color: #fff;
+}
+.footer-copyright-wrapper .footer-copyright{
+  color: #29aafe;
+}
+.footer-copyright a{
+  color: #c7e7fc;
+}
+
+/* Responsive Design (Example) */
+@media (max-width: 768px) {
+  .footer-section {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-bottom-right {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+}

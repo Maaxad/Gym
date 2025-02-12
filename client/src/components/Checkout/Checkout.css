@@ -1,0 +1,216 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
+    padding: 8px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.col-25 {
+    flex: 25%;
+}
+
+.col-50 {
+    flex: 50%;
+}
+
+.col-75 {
+    flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+    padding: 0 16px;
+}
+.container {
+    background-color: #333; /* Slightly lighter background for contrast */
+    padding: 70px; /* Increased padding for a more spacious feel */
+    border: 1px solid #444; /* Darker border */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* More prominent shadow for depth */
+    width: 800px; /* Wider container to occupy more space */
+ 
+}
+
+input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #444;
+    border: 1px solid #666;
+    border-radius: 5px;
+    color: #e6e6e6;
+    font-size: 16px;
+}
+
+input[type=text]::placeholder {
+    color: #999;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+    color: #e0e0e0;
+    font-weight: bold;
+}
+
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+    color: #cccccc;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+a {
+    color: #2196F3;
+}
+
+hr {
+    border: 1px solid #555;
+    margin: 20px 0;
+}
+
+span.price {
+    float: right;
+    color: #b3b3b3;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+    .col-25 {
+        margin-bottom: 20px;
+    }
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+}.checkout-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-50 {
+    flex: 50%;
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .phone-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-dropdown {
+    width: 30%;
+    padding: 12px 20px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  #phone {
+    width: 70%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+  .icon-container i {
+    font-size: 24px;
+    margin-right: 10px;
+  }/* Error message styling */
+.error-message {
+    color: red; /* Set text color to red for errors */
+    font-size: 14px; /* Adjust font size if needed */
+    margin-left: 5px; /* Space between the input field and the error message */
+}
+
+/* Error input styling */
+.error-input {
+    border: 1px solid red; /* Red border for input fields with errors */
+}
+
+/* Optional: styling for placeholder errors */
+input.error::placeholder {
+    color: red; /* Set placeholder color to red if it's indicating an error */
+}
